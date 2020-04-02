@@ -40,6 +40,9 @@ services:
         source: ./logstash/pipeline
         target: /usr/share/logstash/pipeline
         read_only: true
+      - type: bind
+        source: ./COVID-19-master/csse_covid_19_data/csse_covid_19_daily_reports
+        target: /csv:rw
     ports:
       - "5000:5000/tcp"
       - "5000:5000/udp"
