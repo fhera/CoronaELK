@@ -1,0 +1,4 @@
+- pipeline.id: coronavirus
+  path.config: "/usr/share/logstash/pipeline/coronavirus.conf"
+- pipeline.id: EsCoronavirus
+  path.config: "/usr/share/logstash/pipeline/EsCoronavirus.conf"
